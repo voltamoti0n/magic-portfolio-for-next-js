@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Yoshimar",
+  lastName: "Badillo",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Ingenierio de Datos",
+  avatar: "/images/yo.jpg",
+  location: "México/CDMX", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Español", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -62,8 +62,8 @@ const home = {
 };
 
 const about = {
-  label: "About",
-  title: "About me",
+  label: "Acerca de mí",
+  title: "Acerca de mí",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -78,31 +78,41 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introducción",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Ingeniero en computación con más de 10 años de experiencia en análisis de datos, Machine Learning y desarrollo de
+modelos predictivos. Con experiencia en la implementación de soluciones en la nube y el desarrollo de modelos con Python. 
+Amplio conocimiento en la creación de dashboards dinámicos en Power BI para la
+toma de decisiones estratégicas.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experiencia laboral",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Independiente",
+        timeframe: "2023 - 2024",
+        role: "Modelo de Riesgo Crediticio (Machine Learning)",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Desarrollo e implementación de modelo predictivo de riesgo crediticio utilizando técnicas de Machine Learning (Random
+            Forest, XGBoost) en Python, logrando una precisión del 85% en la identificación de buenos pagadores y 73% en
+            la detección de impagos.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Optimización de modelos mediante técnicas avanzadas de balanceo de datos (SMOTE) y ajuste de hiperparámetros
+            (GridSearchCV), mejorando el AUC-ROC de 0.65 a 0.69..
+          </>,
+           <>
+            Feature Engineering y análisis predictivo de más de 25 variables crediticias, identificando los 3 indicadores 
+            más influyentes en el comportamiento de pago: índice de capacidad crediticia, historial de pagos y nivel de ingresos.
+          </>,
+           <>
+            Desarrollo de pipeline completo de ML: desde limpieza de datos hasta implementación de modelo en producción,
+            incluyendo validación cruzada y evaluación de métricas (precisión, recall, F1-score).
           </>,
         ],
         images: [
@@ -116,17 +126,70 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Chatbot Conversacional con NLP",
+        timeframe: "2023 - 2024",
+        role: "Machine Learning y Deep Learning",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Desarrollo de chatbot conversacional: Dise˜no e implementaci´on de un asistente virtual utilizando Python 
+            y el modelo mT5, mejorando la experiencia de usuario.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Procesamiento de lenguaje natural: Desarrollo de soluciones NLP para mejorar la comprensión contextual del chatbot,
+            incluyendo análisis de sentimientos y extracción de entidades usando técnicas de ML.
+          </>,
+          <>
+            Infraestructura cloud y MLOps: Configuración y gestión de máquinas virtuales con GPUs en Compute Engine (GCP)
+            acelerando el proceso de entrenamiento y fine tuning del modelo, incluyendo ajuste de hiperparámetros y pruebas en
+            producción.
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
+      {
+        company: "Universidad Autónoma Metropolitana",
+        timeframe: "2020 - 2024",
+        role: "Profesor adjunto, Departamento de Sistemas, División de Ciencias Básicas e Ingeniería",
+        achievements: [
+          <>
+            Gestión educativa: Coordinación y enseñanza de asignaturas como Introducción a la Programación, 
+            Administración y Diseño de Sistemas de Información, Gráficas por Computadora, y Programación 
+            con Python (Posgrado), optimizando metodologías de enseñanza para grupos de hasta 150 estudiantes.
+          </>,
+          <>
+            Análisis de rendimiento académico: Diseño de un tablero interactivo en Power BI, mostrando métricas clave como
+            promedios de calificación, tasas de aprobación/reprobación, y correlaciones entre asistencia y 
+            rendimiento académico en diversas asignaturas. Segmentación por curso, grupo y periodo académico para 
+            identificar tendencias y patrones en el desempeño estudiantil.
+          </>,
+          <>
+            Predicción del desempeño estudiantil: Desarrollo de un modelo de predicción integrado en Power BI 
+            utilizando técnicas de machine learning en Python, permitiendo visualizar en tiempo real la probabilidad 
+            de éxito o riesgo de cada estudiante según sus calificaciones y asistencia. Configuración de alertas 
+            y visualizaciones para la detección temprana de estudiantes en riesgo.
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
+          {
+        company: "Tiempo UAM",
+        timeframe: "2016 - 2019",
+        role: "Coordinador de revista digital Tiempo UAM, Divisi´on de Ciencias Sociales y Humanidades",
+        achievements: [
+          <>
+            Análisis de temas en tendencia en ciencias sociales: Creación de un sistema de visualización en Power BI 
+            que utiliza Google News API y Google Cloud Platform para extraer temas en tendencia en sociología a nivel 
+            estatal en México, implementando un mapa interactivo con actualización regular que muestra los temas más 
+            mencionados en cada región, apoyando en la planificación editorial de artículos con temas de alto interés social.
+          </>,
+          <>
+            Recopilación y análisis de datos en la nube: Configuración de un flujo de trabajo en Python que recolecta 
+            datos desde fuentes de noticias y los almacena en BigQuery, permitiendo análisis avanzados y consultas SQL en 
+            la nube para identificar y segmentar temas en tendencias.
           </>,
         ],
         images: [],
@@ -135,25 +198,22 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Educación",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Universidad Autónoma Metropolitana",
+        description: <>Ingeniería en computación</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Habilidades técnicas",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Análisis de Datos y Business Intelligence",
+        description: <>Power BI (Power Query, Service, DAX), Google Cloud Platform (BigQuery, Compute Engine, Cloud Storage), 
+        Análisis de datos en SQL.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -171,8 +231,9 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Machine Learning y Deep Learning",
+        description: <>Python (Scikit-learn, Tensorflow, Pytorch), NLP (mT5, Hugging Face, Transformers), 
+        fine-tuning, MLOps (Optimización de modelos en GCP), Web scraping</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -189,16 +250,16 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Noticias que considero importantes en el ámbito de la tecnología, la ciencia y la IA",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  label: "Trabajos",
+  title: "Mis proyectos",
+  description: `Proyectos a lo largo de mi trayectoria laboral ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
