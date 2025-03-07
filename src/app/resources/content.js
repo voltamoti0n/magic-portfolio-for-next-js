@@ -7,13 +7,13 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Ingenierio de Datos",
-  avatar: "/images/yo.jpg",
-  location: "México/CDMX", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["Español", "English"], // optional: Leave the array empty if you don't want to display languages
+  avatar: "/images/avatar.jpg",
+  location: "America/Mexico_City", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Español", "Inglés"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -37,26 +37,22 @@ const social = [
     link: "https://www.linkedin.com/company/once-ui/",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
-  {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:yoshimar.h_ba@yahoo.com.mx",
   },
 ];
 
 const home = {
-  label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  label: "Inicio",
+  title: `Portafolio`,
+  description: `Sitio web personal donde muestro mi trabajo en análisis de datos, 
+  inteligencia artificial y desarrollo de software.`,
+  headline: <>Ingeniero de datos</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Hola, soy Yoshimar, aquí comparto mis proyectos desde su concepción hasta su implementación, 
+      haciendo uso de distintas tecnologías.
     </>
   ),
 };
@@ -82,9 +78,9 @@ const about = {
     description: (
       <>
         Ingeniero en computación con más de 10 años de experiencia en análisis de datos, Machine Learning y desarrollo de
-modelos predictivos. Con experiencia en la implementación de soluciones en la nube y el desarrollo de modelos con Python. 
-Amplio conocimiento en la creación de dashboards dinámicos en Power BI para la
-toma de decisiones estratégicas.
+        modelos predictivos. Con experiencia en la implementación de soluciones en la nube y el desarrollo de modelos con Python. 
+        Amplio conocimiento en la creación de dashboards dinámicos en Power BI para la
+        toma de decisiones estratégicas.
       </>
     ),
   },
@@ -106,23 +102,14 @@ toma de decisiones estratégicas.
             Optimización de modelos mediante técnicas avanzadas de balanceo de datos (SMOTE) y ajuste de hiperparámetros
             (GridSearchCV), mejorando el AUC-ROC de 0.65 a 0.69..
           </>,
-           <>
+          <>
             Feature Engineering y análisis predictivo de más de 25 variables crediticias, identificando los 3 indicadores 
             más influyentes en el comportamiento de pago: índice de capacidad crediticia, historial de pagos y nivel de ingresos.
           </>,
-           <>
+          <>
             Desarrollo de pipeline completo de ML: desde limpieza de datos hasta implementación de modelo en producción,
             incluyendo validación cruzada y evaluación de métricas (precisión, recall, F1-score).
           </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
@@ -131,7 +118,7 @@ toma de decisiones estratégicas.
         role: "Machine Learning y Deep Learning",
         achievements: [
           <>
-            Desarrollo de chatbot conversacional: Dise˜no e implementaci´on de un asistente virtual utilizando Python 
+            Desarrollo de chatbot conversacional: Diseño e implementación de un asistente virtual utilizando Python 
             y el modelo mT5, mejorando la experiencia de usuario.
           </>,
           <>
@@ -144,10 +131,7 @@ toma de decisiones estratégicas.
             producción.
           </>,
         ],
-        images: [],
       },
-    ],
-  },
       {
         company: "Universidad Autónoma Metropolitana",
         timeframe: "2020 - 2024",
@@ -171,14 +155,11 @@ toma de decisiones estratégicas.
             y visualizaciones para la detección temprana de estudiantes en riesgo.
           </>,
         ],
-        images: [],
       },
-    ],
-  },
-          {
+      {
         company: "Tiempo UAM",
         timeframe: "2016 - 2019",
-        role: "Coordinador de revista digital Tiempo UAM, Divisi´on de Ciencias Sociales y Humanidades",
+        role: "Coordinador de revista digital Tiempo UAM, División de Ciencias Sociales y Humanidades",
         achievements: [
           <>
             Análisis de temas en tendencia en ciencias sociales: Creación de un sistema de visualización en Power BI 
@@ -192,7 +173,6 @@ toma de decisiones estratégicas.
             la nube para identificar y segmentar temas en tendencias.
           </>,
         ],
-        images: [],
       },
     ],
   },
@@ -215,34 +195,12 @@ toma de decisiones estratégicas.
         description: <>Power BI (Power Query, Service, DAX), Google Cloud Platform (BigQuery, Compute Engine, Cloud Storage), 
         Análisis de datos en SQL.</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
       },
       {
         title: "Machine Learning y Deep Learning",
         description: <>Python (Scikit-learn, Tensorflow, Pytorch), NLP (mT5, Hugging Face, Transformers), 
         fine-tuning, MLOps (Optimización de modelos en GCP), Web scraping</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
       },
     ],
   },
@@ -250,8 +208,8 @@ toma de decisiones estratégicas.
 
 const blog = {
   label: "Blog",
-  title: "Noticias que considero importantes en el ámbito de la tecnología, la ciencia y la IA",
-  description: `Read what ${person.name} has been up to recently`,
+  title: "Noticias que de tecnología, IA y ciencia",
+  description: `Aquí puedes leer noticias que considero importantes sobre distintos temas`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };

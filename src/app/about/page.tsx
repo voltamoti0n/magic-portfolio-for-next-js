@@ -154,7 +154,7 @@ export default function About() {
                 vertical="center"
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Schedule a call</Flex>
+                <Flex paddingX="8">Agenda una cita</Flex>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
@@ -239,7 +239,7 @@ export default function About() {
                         </Text>
                       ))}
                     </Column>
-                    {experience.images.length > 0 && (
+                    {experience.images && experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
                         {experience.images.map((image, index) => (
                           <Flex
