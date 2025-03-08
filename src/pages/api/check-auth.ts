@@ -1,12 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import * as cookie from "cookie";
+// import * as cookie from "cookie";  // Comentado ya que no se usará
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const cookies = cookie.parse(req.headers.cookie || "");
-
-  if (cookies.authToken === "authenticated") {
-    return res.status(200).json({ authenticated: true });
-  } else {
-    return res.status(401).json({ authenticated: false });
-  }
+  // Eliminamos la verificación de cookies y siempre devolvemos autenticado
+  return res.status(200).json({ authenticated: true });
 }

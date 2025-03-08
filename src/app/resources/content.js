@@ -51,7 +51,7 @@ const home = {
   headline: <>Ingeniero de datos</>,
   subline: (
     <>
-      Hola, soy Yoshimar, aquí comparto mis proyectos desde su concepción hasta su implementación, 
+      Hola, soy Yoshimar, y aquí comparto mis proyectos desde su concepción hasta su implementación 
       haciendo uso de distintas tecnologías.
     </>
   ),

@@ -1,44 +1,57 @@
 ---
-title: "Automating Design Handovers with a Figma to Code Pipeline"
-publishedAt: "2024-04-01"
-summary: "Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think."
+title: "Modelo de Predicción de Riesgo Crediticio con Machine Learning"
+publishedAt: "2023-08-15"
+summary: "Desarrollo de un modelo de machine learning de alta precisión para predecir riesgo crediticio, logrando un 87% de precisión en la identificación de buenos pagadores y 73% en la detección de impagos."
 images:
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/image-03.jpg"
+  - "/images/projects/project-01/credit-1.png"
+  - "/images/projects/project-01/credit-2.png"
+  - "/images/projects/project-01/credit-3.png"
+  - "/images/projects/project-01/credit-4.png"
+  - "/images/projects/project-01/credit-5.png"
 team:
-  - name: "John Doe"
-    role: "Software Engineer"
+  - name: "Yoshimar Badillo"
+    role: "Ingeniero de datos"
     avatar: "/images/avatar.jpg"
     linkedIn: "https://www.linkedin.com/company/once-ui/"
 link: "https://once-ui.com/"
 ---
 
-## Overview
+## Descripción General
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+Este proyecto se centró en el desarrollo de un robusto modelo de machine learning para la evaluación de riesgo crediticio. Mediante el aprovechamiento de algoritmos avanzados y una extensa ingeniería de características, creé un sistema capaz de identificar con precisión tanto a prestatarios confiables como posibles impagos. El modelo sirve como una herramienta crítica para la toma de decisiones en instituciones financieras, ayudándoles a minimizar el riesgo mientras mantienen una cartera de préstamos saludable.
 
-## Key Features
+## Características Principales
 
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+- **Predicción de Alta Precisión**: Logré un 87% de precisión en la identificación de buenos pagadores y 73% en la detección de posibles impagos, proporcionando una evaluación de riesgo confiable.
+- **Algoritmos Avanzados de ML**: Implementé y comparé múltiples algoritmos incluyendo Random Forest y XGBoost para identificar el modelo con mejor rendimiento para la predicción de riesgo crediticio.
+- **Técnicas de Balanceo de Datos**: Apliqué SMOTE (Técnica de Sobremuestreo de Minorías Sintéticas) para abordar problemas de desequilibrio de clases comúnmente encontrados en conjuntos de datos crediticios.
+- **Optimización de Hiperparámetros**: Utilicé GridSearchCV para una sistemática afinación de hiperparámetros, mejorando el puntaje AUC-ROC de 0.65 a 0.69.
+- **Ingeniería de Características Completa**: Analicé y procesé más de 25 variables crediticias para identificar los tres indicadores más influyentes: índice de capacidad crediticia, historial de pagos y nivel de ingresos.
 
-## Technologies Used
+## Tecnologías Utilizadas
 
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
+- **Python**: Lenguaje de programación principal para el desarrollo del modelo y análisis de datos
+- **Scikit-learn**: Para implementar algoritmos de machine learning y métricas de evaluación
+- **Pandas & NumPy**: Para manipulación de datos y operaciones numéricas
+- **XGBoost**: Para implementación de gradient boosting
+- **Matplotlib & Seaborn**: Para visualización de datos y análisis de rendimiento del modelo
+- **Imbalanced-learn**: Para implementar SMOTE y manejar conjuntos de datos desequilibrados
 
-## Challenges and Learnings
+## Desafíos y Aprendizajes
 
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
+Uno de los principales desafíos fue lidiar con datos altamente desequilibrados, ya que los buenos pagadores típicamente superan en número a los morosos en la mayoría de los conjuntos de datos crediticios. Este desequilibrio inicialmente llevó a modelos que eran buenos identificando a buenos pagadores pero deficientes detectando impagos—precisamente los casos que las instituciones financieras más necesitan identificar.
 
-## Outcome
+Mediante la implementación de SMOTE y una cuidadosa afinación de los pesos de clase en los modelos, pude mejorar significativamente la detección de posibles impagos sin sacrificar la precisión general. Además, aprendí la importancia de mirar más allá de las métricas simples de precisión hacia medidas más matizadas como precision, recall y la curva AUC-ROC para evaluar el rendimiento del modelo en problemas de clasificación desequilibrados.
 
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
+## Resultado
+
+El modelo final entrega un pipeline completo de machine learning desde la limpieza de datos hasta la implementación en producción, incluyendo validación cruzada y evaluación integral de métricas (precision, recall, F1-score). El sistema permite a las instituciones financieras:
+
+1. Tomar decisiones de préstamo más informadas basadas en evaluaciones de riesgo confiables
+2. Identificar posibles impagos tempranamente para una intervención proactiva
+3. Comprender los factores clave que influyen en el riesgo crediticio a través del análisis de importancia de características
+4. Ajustar estrategias de préstamo basadas en métricas de riesgo cuantificables
 
 ---
 
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
+Este proyecto demuestra cómo el machine learning puede transformar la evaluación de riesgo en servicios financieros, pasando de la puntuación crediticia tradicional a modelos predictivos más precisos y matizados.
