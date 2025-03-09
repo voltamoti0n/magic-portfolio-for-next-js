@@ -1,10 +1,10 @@
-const baseURL = "demo.magic-portfolio.com";
+const baseURL = "yoshimar-badillo.vercel.app";
 
 const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": false,
+  "/blog": true,
   "/gallery": false,
 };
 
