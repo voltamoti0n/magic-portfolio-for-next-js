@@ -1,0 +1,76 @@
+---
+title: "Arquitectura de un Sistema Basado en IA para la Gestión de Incidencias en Call Centers con AWS"
+publishedAt: "2025-02-25"
+summary: "Desarrollo de un sistema basado en IA para optimizar la gestión de incidencias en call centers utilizando AWS, con un chatbot inteligente y arquitectura serverless."
+images:
+  - "/images/projects/project-01/aws-bedrock.PNG"
+  - "/images/projects/project-01/chatbot-mockup.PNG"
+team:
+  - name: "Yoshimar Hernández Badillo"
+    role: "Ingeniero de Datos"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/yoshimar-hernandez/"
+---
+
+## Descripción General
+
+Este proyecto se centró en el diseño de un sistema basado en inteligencia artificial para la gestión eficiente de incidencias en call centers, 
+utilizando la infraestructura de AWS. El objetivo principal fue hacer un análisis exhaustivo para poder desarrollar a futuro un chatbot capaz 
+de clasificar consultas de clientes mediante (PLN), optimizar recursos técnicos y mejorar la experiencia del usuario. La solución puede ser 
+desplegada en una arquitectura serverless para garantizar escalabilidad y reducir costos operativos.
+
+## Características Principales
+
+- Clasificación Inteligente: Implementación de un chatbot que analiza consultas en lenguaje natural y las clasifica en tres niveles de complejidad:
+  - Primer nivel: Incidencias sencillas resueltas con pasos estandarizados.
+  - Segundo y tercer nivel: Problemas que requieren intervención técnica especializada.
+- Optimización de Recursos: Reducción del tiempo de respuesta y alivio de la carga del personal técnico mediante respuestas automatizadas para incidencias comunes.
+- Mejora Continua: Recopilación y análisis de datos de interacción para optimizar el modelo de IA y los procesos del call center.
+- Arquitectura Serverless: Uso de AWS Lambda y API Gateway para escalar automáticamente según la demanda.
+- Personalización: Fine tuning en Amazon Bedrock con datos propios para alinear respuestas con los valores y procesos internos de la empresa.
+
+## Tecnologías Utilizadas
+
+- AWS: Infraestructura principal, incluyendo:
+  - Amazon Bedrock: Para PLN con modelos como Amazon Titan, Claude y GPT-3.5.
+  - AWS Lambda: Para funciones serverless de procesamiento.
+  - API Gateway: Para endpoints seguros.
+  - DynamoDB: Almacenamiento de datos estructurados (incidencias y respuestas predefinidas).
+  - Amazon S3: Almacenamiento de datos no estructurados (históricos).
+  - AWS Glue y Athena: Para ETL y consultas.
+  - Kinesis, CloudWatch, QuickSight: Monitoreo y análisis (opcional).
+- React: Para la aplicación web/móvil (PWA) desplegada con AWS Amplify.
+- Lenguaje Natural: Modelos preentrenados con capacidad de fine tuning.
+
+![Once UI logo on dark background.](/images/projects/project-01/diagrama-aws.jpg)
+
+## Desafíos y Aprendizajes
+
+El principal desafío fue equilibrar la precisión del chatbot con los costos asociados al uso de 
+modelos de lenguaje (LLMs) en Amazon Bedrock. La estrategia híbrida de respuestas predefinidas en 
+DynamoDB redujo significativamente el consumo de tokens, optimizando el gasto. Otro reto fue garantizar 
+la escalabilidad en escenarios de alta variabilidad de carga, resuelto con la arquitectura serverless. 
+El aprendizaje clave fue la importancia de personalizar modelos de IA con datos históricos para mejorar 
+la relevancia de las respuestas.
+
+## Resultado
+
+El sistema resultante puede ofrecer una gestión eficiente de incidencias en call centers, con las siguientes capacidades:
+
+1. Clasificar y resolver automáticamente incidencias de primer nivel con respuestas paso a paso.
+2. Escalar inteligentemente problemas complejos a técnicos especializados.
+3. Reducir el tiempo de respuesta y optimizar recursos técnicos.
+4. Adaptarse a variaciones de demanda con una arquitectura escalable.
+5. Proporcionar datos para mejoras continuas mediante análisis histórico.
+
+Este proyecto demuestra cómo la integración de IA y AWS puede transformar la atención al cliente, mejorando la experiencia del usuario, 
+optimizando procesos y reduciendo costos operativos: si los tickets son de primer nivel, el propio 
+chatbot puede ser capaz de responderlas indicando paso por paso el procedimiento al usuario; si 
+son de segundo o tercer nivel, se le da la opción al usuario de poder contactar con un técnico 
+especializado y también no perder ese contacto humano.
+
+<a href="/documents/chatbot_documento.pdf" target="_blank" rel="noopener noreferrer">
+  Puedes ver el documento completo más detallado aquí (PDF)
+</a>
+
+![Once UI logo on dark background.](/images/projects/project-01/chatbot-mockup.PNG)
