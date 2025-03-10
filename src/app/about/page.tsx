@@ -154,7 +154,7 @@ export default function About() {
                 vertical="center"
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Agenda una cita</Flex>
+                <Flex paddingX="8">Contáctame</Flex>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"

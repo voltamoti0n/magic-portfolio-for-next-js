@@ -70,7 +70,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "/contacto",
   },
   intro: {
     display: true,
@@ -208,7 +208,7 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Noticias que de tecnología, IA y ciencia",
+  title: "Noticias sobre tecnología, IA y ciencia, y algunos materiales",
   description: `Aquí puedes leer noticias que considero importantes sobre distintos temas`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
