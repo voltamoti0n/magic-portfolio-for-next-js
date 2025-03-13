@@ -29,13 +29,9 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/",
   },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
+
   {
     name: "Email",
     icon: "email",
@@ -208,7 +204,7 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Noticias sobre tecnología, IA y ciencia, y algunos materiales",
+  title: "Noticias, recursos y técnicas",
   description: `Aquí puedes leer noticias que considero importantes sobre distintos temas`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route

@@ -151,7 +151,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             flex={1}
           >
             <Flex horizontal="center" fillWidth minHeight="0">
-              <RouteGuard>{children}</RouteGuard>
+              {/*<RouteGuard>*/}{children}{/*</RouteGuard>*/}
             </Flex>
           </Flex>
           <Footer />

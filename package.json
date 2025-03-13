@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.1",
+    "@formspree/react": "^2.5.4",
     "@mdx-js/loader": "^3.1.0",
     "@next/mdx": "^14.2.16",
     "classnames": "^2.5.1",
