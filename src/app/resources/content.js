@@ -128,49 +128,7 @@ const about = {
             producción.
           </>,
         ],
-      },
-      {
-        company: "Universidad Autónoma Metropolitana",
-        timeframe: "2020 - 2024",
-        role: "Profesor adjunto, Departamento de Sistemas, División de Ciencias Básicas e Ingeniería",
-        achievements: [
-          <>
-            Gestión educativa: Coordinación y enseñanza de asignaturas como Introducción a la Programación, 
-            Administración y Diseño de Sistemas de Información, Gráficas por Computadora, y Programación 
-            con Python (Posgrado), optimizando metodologías de enseñanza para grupos de hasta 150 estudiantes.
-          </>,
-          <>
-            Análisis de rendimiento académico: Diseño de un tablero interactivo en Power BI, mostrando métricas clave como
-            promedios de calificación, tasas de aprobación/reprobación, y correlaciones entre asistencia y 
-            rendimiento académico en diversas asignaturas. Segmentación por curso, grupo y periodo académico para 
-            identificar tendencias y patrones en el desempeño estudiantil.
-          </>,
-          <>
-            Predicción del desempeño estudiantil: Desarrollo de un modelo de predicción integrado en Power BI 
-            utilizando técnicas de machine learning en Python, permitiendo visualizar en tiempo real la probabilidad 
-            de éxito o riesgo de cada estudiante según sus calificaciones y asistencia. Configuración de alertas 
-            y visualizaciones para la detección temprana de estudiantes en riesgo.
-          </>,
-        ],
-      },
-      {
-        company: "Tiempo UAM",
-        timeframe: "2016 - 2019",
-        role: "Coordinador de revista digital Tiempo UAM, División de Ciencias Sociales y Humanidades",
-        achievements: [
-          <>
-            Análisis de temas en tendencia en ciencias sociales: Creación de un sistema de visualización en Power BI 
-            que utiliza Google News API y Google Cloud Platform para extraer temas en tendencia en sociología a nivel 
-            estatal en México, implementando un mapa interactivo con actualización regular que muestra los temas más 
-            mencionados en cada región, apoyando en la planificación editorial de artículos con temas de alto interés social.
-          </>,
-          <>
-            Recopilación y análisis de datos en la nube: Configuración de un flujo de trabajo en Python que recolecta 
-            datos desde fuentes de noticias y los almacena en BigQuery, permitiendo análisis avanzados y consultas SQL en 
-            la nube para identificar y segmentar temas en tendencias.
-          </>,
-        ],
-      },
+      }
     ],
   },
   studies: {
